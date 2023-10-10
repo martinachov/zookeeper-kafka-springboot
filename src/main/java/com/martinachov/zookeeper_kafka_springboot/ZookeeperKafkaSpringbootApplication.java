@@ -1,4 +1,4 @@
-package com.martinachon.zookeeperkafkaspringboot;
+package com.martinachov.zookeeper_kafka_springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

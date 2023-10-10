@@ -1,4 +1,4 @@
-package com.martinachon.zookeeperkafkaspringboot;
+package com.martinachov.zookeeper_kafka_springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

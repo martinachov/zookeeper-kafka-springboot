@@ -1,8 +1,8 @@
-package com.martinachon.zookeeperkafkaspringboot.controller;
+package com.martinachov.zookeeper_kafka_springboot.controller;
 
-import com.martinachon.zookeeperkafkaspringboot.request.Product;
-import com.martinachon.zookeeperkafkaspringboot.request.ProductMessage;
-import com.martinachon.zookeeperkafkaspringboot.service.ProductService;
+import com.martinachov.zookeeper_kafka_springboot.request.Product;
+import com.martinachov.zookeeper_kafka_springboot.request.ProductMessage;
+import com.martinachov.zookeeper_kafka_springboot.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +23,7 @@ public class ProductController {
 
     @PostMapping("/product")
     public ResponseEntity<?> addProduct(@RequestBody Product product) {
-        log.info("[DemoController]: add new product = " + product.toString());
+        log.info("[ProductController]: add new product = " + product.toString());
         this.productService.sendMessage(new ProductMessage(product, "add"));
         return ResponseEntity.ok(product);
     }

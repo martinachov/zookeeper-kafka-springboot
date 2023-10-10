@@ -1,4 +1,4 @@
-package com.martinachon.zookeeperkafkaspringboot.kafka.config;
+package com.martinachov.zookeeper_kafka_springboot.kafka.config;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

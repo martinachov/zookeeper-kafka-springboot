@@ -1,7 +1,6 @@
-package com.martinachon.zookeeperkafkaspringboot.kafka.producer;
+package com.martinachov.zookeeper_kafka_springboot.kafka.producer;
 
-import com.martinachon.zookeeperkafkaspringboot.request.ProductMessage;
-import lombok.NoArgsConstructor;
+import com.martinachov.zookeeper_kafka_springboot.request.ProductMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;

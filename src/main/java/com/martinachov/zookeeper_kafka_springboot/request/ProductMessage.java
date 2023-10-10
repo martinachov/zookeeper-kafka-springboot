@@ -1,4 +1,4 @@
-package com.martinachon.zookeeperkafkaspringboot.request;
+package com.martinachov.zookeeper_kafka_springboot.request;
 
 import lombok.Data;
 
