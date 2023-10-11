@@ -40,16 +40,6 @@ public class KafkaListenerConfiguration {
         config.put(ConsumerConfig.GROUP_ID_CONFIG, "consuming");
         config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-
-        /*DefaultJackson2JavaTypeMapper typeMapper = new DefaultJackson2JavaTypeMapper();
-        Map<String, Class<?>> classMap = new HashMap<>();
-        typeMapper.setIdClassMapping(classMap);
-        typeMapper.addTrustedPackages("*");
-
-        JsonDeserializer<ProductMessage> jsonDeserializer = new JsonDeserializer<>(ProductMessage.class);
-        jsonDeserializer.setTypeMapper(typeMapper);
-        jsonDeserializer.setUseTypeMapperForKey(true);*/
-
         return new DefaultKafkaConsumerFactory<>(config, new StringDeserializer(), new JsonDeserializer<>(ProductMessage.class));
     }
 
